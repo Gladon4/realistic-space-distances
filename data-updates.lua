@@ -21,3 +21,24 @@ data.raw["space-connection"]["gleba-aquilo"].length = 600*m
 data.raw["space-connection"]["fulgora-aquilo"].length = 500*m
 data.raw["space-connection"]["aquilo-solar-system-edge"].length = 1000*m
 data.raw["space-connection"]["solar-system-edge-shattered-planet"].length = 2500*m
+
+for planet, _ in pairs(data.raw["planet"]) do
+    data.raw["planet"][planet].asteroid_spawn_influence = 0
+end
+
+local asteroid_prob_factor = 0.001
+
+for connection, _ in pairs(data.raw["space-connection"]) do
+    for i,k1 in pairs(data.raw["space-connection"][connection].asteroid_spawn_definitions) do
+        for j,k2 in pairs(data.raw["space-connection"][connection].asteroid_spawn_definitions[i].spawn_points) do
+            probability = data.raw["space-connection"][connection].asteroid_spawn_definitions[i].spawn_points[j].probability
+            data.raw["space-connection"][connection].asteroid_spawn_definitions[i].spawn_points[j].probability = probability * asteroid_prob_factor
+            data.raw["space-connection"][connection].asteroid_spawn_definitions[i].spawn_points[j].speed = 0.001
+            
+        end
+    end
+end
+
+
+data.raw["fluid"]["thruster-fuel"].fuel_value = "1000kJ"
+data.raw["fluid"]["thruster-oxidizer"].fuel_value = "1000kJ"
