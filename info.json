@@ -4,7 +4,7 @@
   "title": "Realistic Space Distances",
   "author": "Gladon",
   "homepage": "https://github.com/Gladon4/realistic-space-distances",
-  "description": "Changes the distances between planets to be more realistic and makes changes to platforms to accomodate.",
+  "description": "Changes the distances between planets to be more realistic and makes changes to thrusters, asteroid spawns, turrets and ammo to accomodate.",
   "factorio_version": "2.0",
   "dependencies": [
     "base",
