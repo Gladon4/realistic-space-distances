@@ -1,0 +1,8 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2026-03-16
+  Features:
+    - Asteroid Health and Resistances Changed as they are now much faster and so much more of a threat
+    - Asteroid Spawn Rates addapted. Thruster Power increased for higher acceleration
+    - Distances between planets increased. Space Platform drag removed, but added max speed (speed of light)
+    - Increase Speed of Turrets to keep up with the fast asteroids. Added a space version of Rockets, which are much faster for the same reason
