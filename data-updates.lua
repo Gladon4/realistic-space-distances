@@ -111,3 +111,6 @@ table.insert(data.raw["technology"]["explosive-rocketry"].effects,
         recipe = "explosive-space-rocket"
       })
 
+
+-- Removing the background noise and asteroids to get rid of the flashing at high speeds
+data.raw["space-platform-hub"]["space-platform-hub"].surface_render_parameters = nil
