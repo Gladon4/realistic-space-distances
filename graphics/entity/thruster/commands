@@ -1,0 +1,3 @@
+convert thruster-2.png -crop 264x542 +repage  tmp/tile_%03d.png
+convert tmp/*.png -flip tmp/tile_%03d.png
+montage tmp/*.png -tile 8x4 -background none -geometry +0+0 thruster-2.png
